@@ -1,0 +1,9 @@
+- hosts: sonarqube
+  remote_user: root
+  serial: 1
+  roles:
+    - common
+    - docker
+    - docker-compose
+    - sonarqube
+

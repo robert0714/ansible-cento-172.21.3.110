@@ -1,0 +1,10 @@
+- hosts: app
+  remote_user: root
+  serial: 1
+  roles:
+    - common
+    - docker
+    - docker-compose
+    - jdk
+    - maven
+

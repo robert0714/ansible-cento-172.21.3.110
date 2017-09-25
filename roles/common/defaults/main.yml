@@ -1,0 +1,21 @@
+hosts: [
+  { host_ip: "172.21.3.101", host_name: "dev001"},
+  { host_ip: "172.21.3.102", host_name: "dev002"},
+  { host_ip: "172.21.3.103", host_name: "dev003"},
+  { host_ip: "172.21.3.104", host_name: "dev004"},
+  { host_ip: "172.21.3.105", host_name: "dev005"},
+  { host_ip: "172.21.3.106", host_name: "dev006"},
+  { host_ip: "172.21.3.107", host_name: "dev007"},
+  { host_ip: "172.21.3.108", host_name: "dev008"},
+  { host_ip: "172.21.3.101", host_name: "dev009"},
+  { host_ip: "172.21.3.102", host_name: "dev010"}
+  ]
+
+obsolete_services:
+  - puppet
+  - chef-client
+
+centos_files: [
+     { src: "centos.sshd_config", dest: "/etc/ssh/sshd_config" },
+  ]
+
