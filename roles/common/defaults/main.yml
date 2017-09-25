@@ -16,6 +16,6 @@ obsolete_services:
   - chef-client
 
 centos_files: [
-     { src: "centos.sshd_config", dest: "/etc/ssh/sshd_config" },
+     { src: "CentOS-Base.repo", dest: "/etc/yum.repos.d/CentOS-Base.repo" },
   ]
 

@@ -10,12 +10,12 @@
 #   ignore_errors: yes
 #   tags: [common]
 
-# - name: CentOS files are copied
-#   copy:
-#     src: "{{ item.src }}"
-#     dest: "{{ item.dest }}"
-#   with_items: "{{ centos_files }}"
-#   tags: [common]
+- name: CentOS files are copied
+  copy:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  with_items: "{{ centos_files }}"
+  tags: [common]
 
 
 - name: selenix  policycoreutils
