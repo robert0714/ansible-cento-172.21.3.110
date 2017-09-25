@@ -1,5 +1,5 @@
 - hosts: mysql
-  remote_user: root
+  remote_user: iisi.dev94
   serial: 1
   roles:
     - common
