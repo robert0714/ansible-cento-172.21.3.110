@@ -5,5 +5,5 @@
     - common
     - docker
     - docker-compose
-    - nexus
+    - sonarqube
 

@@ -1,9 +1,9 @@
-- hosts: sonarqube
+- hosts: nexus
   remote_user: iisi.dev94
   serial: 1
   roles:
     - common
     - docker
     - docker-compose
-    - sonarqube
+    - nexus
 
