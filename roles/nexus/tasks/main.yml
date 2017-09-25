@@ -1,0 +1,34 @@
+# Variable setup.
+- name: Include OS-Specific variables
+  include_vars: "{{ ansible_os_family }}.yml"
+  tags: [nexus]
+
+  
+- name: Define host_ip
+  set_fact:
+    host_ip: "{{ __host_ip }}"
+  when: host_ip is not defined
+  tags: [nexus]
+
+- name: nexus Data dirctory are created
+  file: path=/data/nexus-data/ state=directory mode=0755
+  ignore_errors: yes
+  tags: [nexus]
+ 
+ 
+
+- name: nexus Container is running
+  docker_container:
+    privileged: yes
+    env:
+      MAX_HEAP: 1g
+      MIN_HEAP: 512m
+      JAVA_OPTS:  "-server -XX:MaxPermSize=192m -Djava.net.preferIPv4Stack=true"
+    name: nexus
+    image: "sonatype/nexus:{{ nexus_version }}"     
+    ports: 
+     - "8081:8081" 
+    volumes: 
+      - /data/nexus-data:/sonatype-work
+  register: container_result
+  tags: [nexus]

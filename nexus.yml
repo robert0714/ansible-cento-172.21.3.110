@@ -1,9 +1,9 @@
-- hosts: jenkins
+- hosts: sonarqube
   remote_user: iisi.dev94
   serial: 1
   roles:
     - common
     - docker
     - docker-compose
-    - jenkins2-docker 
+    - sonarqube
 
