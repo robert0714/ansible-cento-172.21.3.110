@@ -1,3 +1,4 @@
+jenkins_version: lts 
 home: /data/jenkins
 main_job_src: service-workflow-config.xml
 service_redeploy_src: service-redeploy-config.xml
