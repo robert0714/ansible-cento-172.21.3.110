@@ -19,7 +19,7 @@
     - python-pip
     - python-virtualenv
     - gcc
-    - sshpass 
+    # - sshpass 
   tags: [mysql]
 
 - name: Install Mysql RPM dependencies
