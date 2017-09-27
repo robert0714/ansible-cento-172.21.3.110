@@ -7,8 +7,8 @@ hosts: [
   { host_ip: "172.21.3.106", host_name: "dev006"},
   { host_ip: "172.21.3.107", host_name: "dev007"},
   { host_ip: "172.21.3.108", host_name: "dev008"},
-  { host_ip: "172.21.3.101", host_name: "dev009"},
-  { host_ip: "172.21.3.102", host_name: "dev010"}
+  { host_ip: "172.21.3.109", host_name: "dev009"},
+  { host_ip: "172.21.3.110", host_name: "dev010"}
   ]
 
 obsolete_services:
