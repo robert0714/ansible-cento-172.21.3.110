@@ -76,8 +76,15 @@
 
 - name: vagrant user is added to the docker group
   user:
-    name: vagrant
+    name: {{ item }}
     group: docker
+  with_items: 
+    - iisi.dev94
+    - iisi.dev95
+    - iisi.dev04
+    - iisi.dev05
+    - iisi.dev06
+    - iisi.dev07
   register: user_result
   tags: [docker]
 
