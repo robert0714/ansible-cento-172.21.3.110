@@ -76,7 +76,7 @@
 
 - name: vagrant user is added to the docker group
   user:
-    name: {{ item }}
+    name: "{{ item }}"
     group: docker
   with_items: 
     - iisi.dev94
