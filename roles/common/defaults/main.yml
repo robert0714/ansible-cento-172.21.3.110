@@ -1,14 +1,14 @@
 hosts: [
-  { host_ip: "172.21.3.101", host_name: "dev001"},
-  { host_ip: "172.21.3.102", host_name: "dev002"},
-  { host_ip: "172.21.3.103", host_name: "dev003"},
-  { host_ip: "172.21.3.104", host_name: "dev004"},
-  { host_ip: "172.21.3.105", host_name: "dev005"},
-  { host_ip: "172.21.3.106", host_name: "dev006"},
-  { host_ip: "172.21.3.107", host_name: "dev007"},
-  { host_ip: "172.21.3.108", host_name: "dev008"},
-  { host_ip: "172.21.3.109", host_name: "dev009"},
-  { host_ip: "172.21.3.110", host_name: "dev010"}
+  { host_ip: "172.21.3.101", host_name: "003101"},
+  { host_ip: "172.21.3.102", host_name: "003102"},
+  { host_ip: "172.21.3.103", host_name: "003103"},
+  { host_ip: "172.21.3.104", host_name: "003104"},
+  { host_ip: "172.21.3.105", host_name: "003105"},
+  { host_ip: "172.21.3.106", host_name: "003106"},
+  { host_ip: "172.21.3.107", host_name: "003107"},
+  { host_ip: "172.21.3.108", host_name: "003108"},
+  { host_ip: "172.21.3.109", host_name: "003109"},
+  { host_ip: "172.21.3.110", host_name: "003110"}
   ]
 
 obsolete_services:
