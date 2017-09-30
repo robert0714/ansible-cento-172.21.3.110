@@ -22,13 +22,13 @@
     privileged: yes
     env:
       MAX_HEAP: 1g
-      MIN_HEAP: 512m
-      JAVA_OPTS:  "-server -XX:MaxPermSize=192m -Djava.net.preferIPv4Stack=true"
+      MIN_HEAP: 1g
+      JAVA_OPTS:  "-server  -Djava.net.preferIPv4Stack=true"
     name: nexus
     image: "sonatype/nexus:{{ nexus_version }}"     
     ports: 
      - "8081:8081" 
     volumes: 
-      - /data/nexus-data:/sonatype-work
+      - /data/nexus-data:/sonatype-work:Z
   register: container_result
   tags: [nexus]
