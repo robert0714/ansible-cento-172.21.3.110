@@ -21,11 +21,11 @@
   docker_container:
     privileged: yes
     env:
-      MAX_HEAP: 1g
-      MIN_HEAP: 1g
-      JAVA_OPTS:  "-server  -Djava.net.preferIPv4Stack=true"
+      JAVA_OPTS: "  -Duser.timezone=Asia/Taipei -server  -Djava.net.preferIPv4Stack=true"
+      JAVA_MAX_HEAP: 1500m
+      JAVA_MIN_HEAP: 1500m   
     name: nexus
-    image: "sonatype/nexus:{{ nexus_version }}"     
+    image: "sonatype/nexus3:{{ nexus_version }}"     
     ports: 
      - "8081:8081" 
     volumes: 
