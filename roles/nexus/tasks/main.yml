@@ -32,3 +32,6 @@
       - /data/nexus-data:/sonatype-work:Z
   register: container_result
   tags: [nexus]
+  #ref: https://github.com/OpenShiftDemos/nexus/issues/5
+
+  
