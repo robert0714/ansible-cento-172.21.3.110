@@ -1,0 +1,6 @@
+- hosts: consul
+  remote_user:  iisi.dev94
+  serial: 1
+  roles:
+    - consul-cfg
+    - consul
