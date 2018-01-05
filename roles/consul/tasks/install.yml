@@ -1,5 +1,5 @@
 - name: Is running
-  shell: "nohup consul agent {{ consul_extra }} \
+  shell: "nohup /bin/consul agent {{ consul_extra }} \
     -data-dir /data/consul/data \
     -config-dir /data/consul/config \
     -node={{ ansible_hostname }} \
