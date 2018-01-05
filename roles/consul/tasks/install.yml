@@ -3,7 +3,7 @@
     -data-dir /data/consul/data \
     -config-dir /data/consul/config \
     -node={{ ansible_hostname }} \
-    -bind={{ ip }} \
+    -bind={{ host_ip }} \
     -client=0.0.0.0 \
     >{{ logs_dir }}/consul.log 2>&1 &"
   tags: [consul]
