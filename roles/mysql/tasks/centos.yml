@@ -31,6 +31,7 @@
     - mysql-community-client
     - mysql-community-server 
     - mysql-community-devel 
+    - mysql-shell
   when: usePercona == 0 
   tags: [mysql]
 
