@@ -29,6 +29,8 @@
     - 24902
     - 24903
     - 24904
+    - 33060
+    - 33061
   ignore_errors: yes
   tags: [common]
 
